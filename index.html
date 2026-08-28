@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Laboratorio de Ingeniería Mecánica - UTN Facultad Regional Córdoba">
+  <title>UTN FRC | Laboratorio de Ingeniería Mecánica</title>
+  <link rel="icon" href="logo-utn-frc-mecanica.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <button class="brand brand-button" type="button" data-view="home" aria-label="Ir al inicio">
+        <img src="logo-utn-frc-mecanica-sinfondo.png" alt="Logo UTN FRC">
+        <div class="brand-text">
+          <strong>UTN FRC</strong>
+          <strong>Laboratorio de Ingeniería Mecánica</strong>
+        </div>
+      </button>
+
+      <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <button class="nav-btn active" type="button" data-view="home">Inicio</button>
+        <button class="nav-btn" type="button" data-view="catalog">Catálogo</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="app-shell">
+    <section id="homeView" class="view active">
+      <div class="hero">
+        <div class="hero-grid"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <span class="eyebrow">Universidad Tecnológica Nacional - Facultad Regional Córdoba</span>
+            <h1>Laboratorio de <span>Ingeniería Mecánica</span></h1>
+            <div class="hero-actions">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section intro-section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Sobre la carrera</h2>
+            <p>
+              La carrera de Ingeniería Mecánica forma profesionales capaces de diseñar, desarrollar, optimizar y gestionar 
+              sistemas, procesos y equipos vinculados a la actividad industrial y el desarrollo tecnológico. 
+              Prepara ingenieros e ingenieras para brindar soluciones innovadoras en áreas como la manufactura, la energía, la automatización 
+              y el mantenimiento, contribuyendo a mejorar la productividad, la competitividad y la calidad de vida de la sociedad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="catalogView" class="view">
+      <div class="section section-soft catalog-section">
+        <div class="container catalog-layout" id="catalogChoice">
+          <div class="catalog-header catalog-choice-header">
+            <span class="eyebrow">Explorar laboratorio</span>
+            <h2>Catálogo</h2>
+            <p>Seleccione una categoría para continuar.</p>
+          </div>
+
+          <div class="catalog-type-grid">
+            <button class="catalog-type-card" type="button" data-catalog-type="pieces">
+              <strong>Piezas</strong>
+              <span>→</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container catalog-layout catalog-browser" id="catalogBrowser" hidden>
+          <button class="catalog-back" type="button" id="catalogBack">← Elegir otra categoría</button>
+          <div class="catalog-header">
+            <h2 id="catalogTitle">Piezas</h2>
+            <p>Seleccione una pieza para ver su ficha completa.</p>
+            <label class="element-search">
+              <input class="element-search-input" type="search" placeholder="Buscar por nombre..." autocomplete="off">
+            </label>
+          </div>
+
+          <div class="catalog-grid" id="catalogGrid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="detailView" class="view detail-view-section">
+      <div class="container detail-shell">
+        <button class="back-btn" type="button" data-view="catalog" data-return-to="pieces">← Volver al catálogo</button>
+
+        <div class="ficha-card" id="detailCard" aria-live="polite">
+          <div class="ficha-photo-wrap">
+            <img id="detailImage" src="" alt="Imagen del elemento del laboratorio">
+          </div>
+
+          <div class="ficha-content">
+            <h3 id="detailName">Nombre del elemento</h3>
+
+            <div class="detail-group">
+              <h4>¿Qué es?</h4>
+              <p id="detailWhat"></p>
+            </div>
+
+            <div class="detail-group">
+              <h4>Función principal</h4>
+              <p id="detailPurpose"></p>
+            </div>
+
+          </div>
+
+          <div class="detail-gallery" id="detailGallery" aria-label="Imágenes adicionales de la pieza"></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="image-modal" id="imageModal" hidden>
+      <button class="image-modal-close" id="imageModalClose" type="button" aria-label="Cerrar imagen">×</button>
+      <img id="imageModalContent" src="" alt="">
+      <video id="videoModalContent" controls playsinline preload="metadata"></video>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <div>
+        <strong>Universidad Tecnológica Nacional - Facultad Regional Córdoba</strong>
+        <strong>Departamento de Ingeniería Mecánica</strong>
+        <p>Sede Central (Maestro M. López esq. Cruz Roja Argentina, Córdoba Capital)</p>
+        <p>Edificio Maders - Planta Baja</p>
+      </div>
+    </div>
+    <div class="copyright">© 2026 UTN FRC · Ingeniería Mecánica</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

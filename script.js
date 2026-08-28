@@ -563,7 +563,7 @@ function selectItem(itemId) {
     const openMedia = () => {
       const image = itemElement.querySelector("img");
       const video = itemElement.dataset.videoSrc;
-      if (video) {
+      if (video && /\.(mp4|webm|ogg)$/i.test(video)) {
         openVideoModal(video);
       } else {
         openImageModal(image.src, image.alt);

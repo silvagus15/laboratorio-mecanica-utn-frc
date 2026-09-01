@@ -580,6 +580,14 @@ function getCurrentCatalogItems() {
   return catalogItems;
 }
 
+function getAllCatalogItems() {
+  return [...catalogItems, ...machineCatalogItems, ...benchCatalogItems];
+}
+
+function findItemById(itemId) {
+  return getAllCatalogItems().find(item => item.id === itemId);
+}
+
 function getSelectedItemFromQuery() {
   const params = new URLSearchParams(window.location.search);
   return params.get("item");
@@ -733,8 +741,19 @@ searchInputs.forEach(input => {
 });
 
 function selectItem(itemId) {
-  const items = getCurrentCatalogItems();
-  const item = items.find(entry => entry.id === itemId) || items[0];
+  const item = findItemById(itemId);
+  if (!item) {
+    console.warn(`No se encontró la ficha "${itemId}" en ninguna categoría.`);
+    return;
+  }
+
+  const itemType =
+    catalogItems.some(entry => entry.id === item.id) ? "pieces" :
+    machineCatalogItems.some(entry => entry.id === item.id) ? "machines" :
+    "bench-tests";
+
+  currentCatalogType = itemType;
+  updateCatalogHeader();
 
   const catalogBackButton = document.querySelector(".back-btn");
   if (catalogBackButton) {
@@ -862,6 +881,5 @@ if (initialItem) {
   selectItem(initialItem);
   showView("detail");
 } else {
-  selectItem(catalogItems[0].id);
   showView("home");
 }

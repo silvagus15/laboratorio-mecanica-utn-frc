@@ -108,6 +108,18 @@ const catalogItems = [
     purpose: "Asegurar la fijación rígida de piezas como rodamientos o poleas sobre el eje, transmitiendo los esfuerzos mecánicos y evitando desplazamientos o vibraciones durante el funcionamiento."
   },
   {
+    id: "crapodina",
+    name: "Crapodina",
+    image: "img_piezas/crapodina_1.jpeg",
+    images: [
+      "img_piezas/crapodina_2.jpeg",
+      "img_piezas/crapodina_3.jpg",
+      "img_piezas/crapodina_4.png"
+    ],
+    what: "Componente del sistema de embrague de un vehículo, también llamado rulemán o collarín de empuje del embrague.",
+    purpose: "Accionar el embrague, presionando el diafragma o mecanismo de presión para separar el motor de la caja de cambios cuando se pisa el pedal."
+  },
+  {
     id: "electrobomba-hidraulica",
     name: "Electrobomba hidráulica",
     image: "img_piezas/electrobomba_hidra_2.jpeg",
@@ -396,6 +408,136 @@ const catalogItems = [
   },
 ];
 
+const machineCatalogItems = [
+  {
+    id: "robot-soldadura-cloos",
+    name: "Robot de soldadura - Marca Cloos",
+    image: "img_piezas/robot_soldadura_2.jpeg",
+    images: [
+      "img_piezas/robot_soldadura_1.jpeg",
+      "img_piezas/robot_soldadura_3.jpg",
+      "img_piezas/robot_soldadura_4.jpg"
+    ],
+    what: "Equipo industrial automatizado que utiliza un brazo robótico para realizar trabajos de soldadura de manera programada.",
+    purpose: "Soldar piezas metálicas de forma automática, precisa y repetitiva, logrando uniones uniformes y reduciendo el trabajo manual del operario."
+  },
+  {
+    id: "maquina-generadora-vibraciones",
+    name: "Máquina generadora de vibraciones mecánicas",
+    image: "img_piezas/vibraciones_mecanicas_2.jpeg",
+    images: [
+      "img_piezas/vibraciones_mecanicas_1.jpeg",
+      "img_piezas/vibraciones_mecanicas_3.jpeg"
+    ],
+    videos: ["vid_piezas/vibraciones_mecanicas_video.mp4"],
+    what: "Equipo que produce movimientos vibratorios controlados sobre una pieza o estructura.",
+    purpose: "Estudiar y medir el comportamiento de sistemas sometidos a vibraciones, analizando parámetros como frecuencia, amplitud, resonancia y respuesta mecánica."
+  },
+  {
+    id: "fresadora-cnc-5-ejes",
+    name: "Fresadora CNC de 5 ejes",
+    image: "img_piezas/fresa_5ejes_1.jpeg",
+    images: [
+      "img_piezas/fresa_5ejes_1.jpeg",
+      "img_piezas/fresa_5ejes_2.jpeg"
+    ],
+    what: "Máquina automatizada y controlada por computadora que permite tallar y mecanizar una pieza moviendo la herramienta de corte, la mesa de trabajo o la pieza en cinco ejes diferentes.",
+    purpose: "Realizar cortes, perforaciones y formas complejas con alta precisión, pudiendo trabajar varias caras de una pieza sin tener que cambiarla de posición manualmente."
+  },
+  {
+    id: "torno-cnc-promecor",
+    name: "Torno CNC - Marca Promecor",
+    image: "img_piezas/tornocnc_promecor_1.jpeg",
+    images: [
+      "img_piezas/tornocnc_promecor_1.jpeg",
+      "img_piezas/tornocnc_promecor_2.jpeg"
+    ],
+    what: "Máquina automatizada y controlada por computadora que hace girar una pieza sobre su propio eje mientras una herramienta de corte le da forma.",
+    purpose: "Fabricar piezas de revolución (cilíndricas, cónicas, esféricas, etc.) con precisión, realizando operaciones como cilindrado, refrentado, ranurado, roscado y perforado de manera automática."
+  },
+  {
+    id: "torno-paralelo-t190-turri",
+    name: "Torno paralelo T-190 - Marca Turri",
+    image: "img_piezas/tornoparalelo_turri_1.jpeg",
+    images: [
+      "img_piezas/tornoparalelo_turri_1.jpeg",
+      "img_piezas/tornoparalelo_turri_2.jpeg"
+    ],
+    what: "Máquina convencional (manual) en la que la pieza gira sobre su eje mientras una herramienta de corte avanza sobre ella para darle forma. \"T-190\" indica que posee una altura de centro de 190 mm desde la bancada o base del plato hasta el eje del mismo.",
+    purpose: "Mecanizar piezas de revolución, especialmente cilíndricas, realizando de forma manual trabajos como cilindrado, refrentado, roscado, ranurado y perforado."
+  }
+];
+
+const benchCatalogItems = [
+  {
+    id: "banco-pruebas-resortes-helicoidales",
+    name: "Banco de ensayos: resortes helicoidales",
+    image: "img_piezas/medicion_resortes_2.jpeg",
+    images: [
+      "img_piezas/medicion_resortes_1.jpeg",
+      "img_piezas/medicion_resortes_3.jpeg",
+      "img_piezas/medicion_resortes_4.jpeg"
+    ],
+    what: "Dispositivo de ensayo que permite aplicar distintas cargas a un resorte helicoidal y medir cuánto se deforma.",
+    purpose: "Determinar la rigidez o constante elástica del resorte, relacionando la fuerza aplicada con su deformación. Estrechamente relacionado con la Ley de Hooke."
+  },
+  {
+    id: "banco-perdidas-carga-tuberias",
+    name: "Banco de ensayos: pérdidas de carga en tuberías",
+    image: "img_piezas/cargas_tuberias_1.jpeg",
+    images: [
+      "img_piezas/cargas_tuberias_1.jpeg",
+      "img_piezas/cargas_tuberias_2.jpeg"
+    ],
+    what: "Equipo didáctico que permite bombear un fluido por tuberías de distintos materiales, diámetros y accesorios.",
+    purpose: "Medir la caída de presión o pérdida de energía del fluido provocada por la fricción en las tuberías y por el paso a través de codos, válvulas, uniones y otros accesorios."
+  },
+  {
+    id: "banco-numero-reynolds",
+    name: "Banco de ensayos: número de Reynolds",
+    image: "img_piezas/ensayo_reynolds_1.jpeg",
+    images: [
+      "img_piezas/ensayo_reynolds_1.jpeg",
+      "img_piezas/ensayo_reynolds_2.jpeg"
+    ],
+    what: "Equipo utilizado para observar el comportamiento de un fluido dentro de una tubería transparente. Pilar fundamental en la práctica de mecánica de fluidos.",
+    purpose: "Permite identificar si el flujo es laminar, de transición o turbulento mediante el número de Reynolds, relacionando las fuerzas de inercia con las fuerzas viscosas del fluido."
+  },
+  {
+    id: "banco-brazo-hidraulico",
+    name: "Banco de ensayos: brazo hidráulico",
+    image: "img_piezas/hidraulica_y_brazo_1.jpeg",
+    images: [
+      "img_piezas/hidraulica_y_brazo_1.jpeg",
+      "img_piezas/hidraulica_y_brazo_2.jpeg"
+    ],
+    what: "Equipo didáctico o de ensayo que utiliza aceite a alta presión para generar movimiento y fuerza en un brazo mecánico.",
+    purpose: "Permitir estudiar y practicar el funcionamiento de sistemas hidráulicos, observando cómo la presión del fluido acciona cilindros hidráulicos y mueve las distintas articulaciones del brazo."
+  },
+  {
+    id: "banco-neumatica-festo",
+    name: "Banco didáctico de neumática - Marca Festo",
+    image: "img_piezas/banconeumatica_festo_2.jpeg",
+    images: [
+      "img_piezas/banconeumatica_festo_1.jpeg",
+      "img_piezas/banconeumatica_festo_2.jpeg"
+    ],
+    what: "Equipo de enseñanza que permite diseñar, armar y probar circuitos industriales que funcionan con aire comprimido.",
+    purpose: "Permite aprender y practicar el funcionamiento de componentes neumáticos como cilindros, válvulas, mangueras, reguladores y actuadores, observando cómo el aire comprimido genera movimiento y fuerza de forma automatizada."
+  },
+  {
+    id: "banco-medicion-bombas-hidraulicas",
+    name: "Banco de ensayos: medición de bombas hidráulicas",
+    image: "img_piezas/banco_medicion_bombas_1.jpeg",
+    images: [
+      "img_piezas/banco_medicion_bombas_1.jpeg",
+      "img_piezas/banco_medicion_bombas_2.jpeg"
+    ],
+    what: "Equipo de ensayo hidráulico que permite conectar dos o más bombas hidráulicas de distintas formas y evaluar su funcionamiento.",
+    purpose: "Comparar el caudal, la presión y el rendimiento de las bombas cuando trabajan en serie o en paralelo."
+  }
+];
+
 const catalogGrid = document.getElementById("catalogGrid");
 const detailImage = document.getElementById("detailImage");
 const detailName = document.getElementById("detailName");
@@ -406,6 +548,37 @@ const imageModal = document.getElementById("imageModal");
 const imageModalContent = document.getElementById("imageModalContent");
 const videoModalContent = document.getElementById("videoModalContent");
 const imageModalClose = document.getElementById("imageModalClose");
+let currentCatalogType = "pieces";
+
+function updateCatalogHeader() {
+  const catalogTitle = document.getElementById("catalogTitle");
+  const catalogDescription = catalogTitle?.nextElementSibling;
+
+  const typeConfig = {
+    pieces: {
+      label: "Piezas",
+      description: "Seleccione una pieza para ver su ficha completa."
+    },
+    machines: {
+      label: "Máquinas",
+      description: "Seleccione una máquina para ver su ficha completa."
+    },
+    "bench-tests": {
+      label: "Bancos didácticos / de ensayos",
+      description: "Seleccione un banco didáctico o de ensayos para ver su ficha completa."
+    }
+  };
+
+  const activeType = typeConfig[currentCatalogType] || typeConfig.pieces;
+  if (catalogTitle) catalogTitle.textContent = activeType.label;
+  if (catalogDescription) catalogDescription.textContent = activeType.description;
+}
+
+function getCurrentCatalogItems() {
+  if (currentCatalogType === "machines") return machineCatalogItems;
+  if (currentCatalogType === "bench-tests") return benchCatalogItems;
+  return catalogItems;
+}
 
 function getSelectedItemFromQuery() {
   const params = new URLSearchParams(window.location.search);
@@ -450,13 +623,32 @@ function showCatalogChoice() {
 }
 
 function showPiecesCatalog() {
+  currentCatalogType = "pieces";
   catalogChoice.hidden = true;
   catalogBrowser.hidden = false;
+  updateCatalogHeader();
+  renderCatalog();
+}
+
+function showMachinesCatalog() {
+  currentCatalogType = "machines";
+  catalogChoice.hidden = true;
+  catalogBrowser.hidden = false;
+  updateCatalogHeader();
+  renderCatalog();
+}
+
+function showBenchTestsCatalog() {
+  currentCatalogType = "bench-tests";
+  catalogChoice.hidden = true;
+  catalogBrowser.hidden = false;
+  updateCatalogHeader();
   renderCatalog();
 }
 
 function renderCatalog() {
-  const sortedItems = [...catalogItems].sort((firstItem, secondItem) =>
+  const items = getCurrentCatalogItems();
+  const sortedItems = [...items].sort((firstItem, secondItem) =>
     firstItem.name.localeCompare(secondItem.name, "es", { sensitivity: "base" })
   );
 
@@ -479,6 +671,15 @@ function renderCatalog() {
 
 document.querySelectorAll("[data-catalog-type]").forEach(button => {
   button.addEventListener("click", () => {
+    const selectedType = button.dataset.catalogType;
+    if (selectedType === "machines") {
+      showMachinesCatalog();
+      return;
+    }
+    if (selectedType === "bench-tests") {
+      showBenchTestsCatalog();
+      return;
+    }
     showPiecesCatalog();
   });
 });
@@ -489,7 +690,7 @@ function findMatchingItem(searchTerm) {
   const normalizedTerm = normalizeSearchText(searchTerm);
   if (!normalizedTerm) return null;
 
-  return catalogItems.find(item =>
+  return getCurrentCatalogItems().find(item =>
     normalizeSearchText(item.name).includes(normalizedTerm)
   );
 }
@@ -497,7 +698,7 @@ function findMatchingItem(searchTerm) {
 function filterCatalog(searchTerm) {
   const normalizedTerm = normalizeSearchText(searchTerm);
   document.querySelectorAll(".catalog-card").forEach(card => {
-    const item = catalogItems.find(entry => entry.id === card.dataset.id);
+    const item = getCurrentCatalogItems().find(entry => entry.id === card.dataset.id);
     card.hidden = Boolean(normalizedTerm) && !normalizeSearchText(item.name).includes(normalizedTerm);
   });
 }
@@ -532,15 +733,24 @@ searchInputs.forEach(input => {
 });
 
 function selectItem(itemId) {
-  const item = catalogItems.find(entry => entry.id === itemId) || catalogItems[0];
+  const items = getCurrentCatalogItems();
+  const item = items.find(entry => entry.id === itemId) || items[0];
+
+  const catalogBackButton = document.querySelector(".back-btn");
+  if (catalogBackButton) {
+    catalogBackButton.dataset.returnTo = currentCatalogType;
+  }
+
+  const galleryImages = (item.images || []).filter(image => image !== item.image);
+  const galleryVideos = item.videos || [];
 
   detailImage.src = item.image;
   detailImage.alt = item.name;
-  detailGallery.innerHTML = (item.images || []).map(image => `
+  detailGallery.innerHTML = galleryImages.map(image => `
     <button class="detail-gallery-item" type="button" aria-label="Ver imagen completa de ${item.name}">
       <img src="${image}" alt="${item.name}" loading="lazy">
     </button>
-  `).join("") + (item.videos || []).map(video => {
+  `).join("") + galleryVideos.map(video => {
     if (/\.(mp4|webm|ogg)$/i.test(video)) {
       return `
         <div class="detail-gallery-item detail-gallery-video" data-video-src="${video}" role="button" tabindex="0" aria-label="Ver video completo de ${item.name}">
@@ -627,8 +837,17 @@ document.querySelectorAll("[data-view]").forEach(button => {
     if (targetView === "detail") return;
 
     showView(targetView);
-    if (targetView === "catalog" && button.dataset.returnTo === "pieces") {
-      showPiecesCatalog();
+    if (targetView === "catalog") {
+      const returnType = button.dataset.returnTo;
+      if (returnType === "machines") {
+        showMachinesCatalog();
+      } else if (returnType === "bench-tests") {
+        showBenchTestsCatalog();
+      } else if (returnType === "pieces") {
+        showPiecesCatalog();
+      } else {
+        showCatalogChoice();
+      }
     }
     nav.classList.remove("open");
     menuToggle?.setAttribute("aria-expanded", "false");
@@ -636,6 +855,7 @@ document.querySelectorAll("[data-view]").forEach(button => {
 });
 
 const initialItem = getSelectedItemFromQuery();
+updateCatalogHeader();
 renderCatalog();
 
 if (initialItem) {

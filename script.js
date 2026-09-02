@@ -429,7 +429,10 @@ const machineCatalogItems = [
       "img_piezas/vibraciones_mecanicas_1.jpeg",
       "img_piezas/vibraciones_mecanicas_3.jpeg"
     ],
-    videos: ["vid_piezas/vibraciones_mecanicas_video.mp4"],
+    videos: [
+      "vid_piezas/vibraciones_mecanicas_video.mp4",
+      "vid_piezas/maquina_vibraciones_mecanicas_video_1.mp4"
+    ],
     what: "Equipo que produce movimientos vibratorios controlados sobre una pieza o estructura.",
     purpose: "Estudiar y medir el comportamiento de sistemas sometidos a vibraciones, analizando parámetros como frecuencia, amplitud, resonancia y respuesta mecánica."
   },

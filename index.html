@@ -65,17 +65,20 @@
           </div>
 
           <div class="catalog-type-grid">
-            <button class="catalog-type-card" type="button" data-catalog-type="pieces">
-              <strong>Piezas</strong>
-              <span>→</span>
+            <button class="catalog-type-card" type="button" data-catalog-type="bench-tests">
+              <strong>BANCOS DE ENSAYO</strong>
+            </button>
+            <button class="catalog-type-card" type="button" data-catalog-type="lab-spaces">
+              <strong>ESPACIOS DEL LABORATORIO</strong>
             </button>
             <button class="catalog-type-card" type="button" data-catalog-type="machines">
-              <strong>Máquinas</strong>
-              <span>→</span>
+              <strong>MÁQUINAS</strong>
             </button>
-            <button class="catalog-type-card" type="button" data-catalog-type="bench-tests">
-              <strong>Bancos didácticos / de ensayos</strong>
-              <span>→</span>
+            <button class="catalog-type-card" type="button" data-catalog-type="engines">
+              <strong>MOTORES</strong>
+            </button>
+            <button class="catalog-type-card" type="button" data-catalog-type="pieces">
+              <strong>PIEZAS</strong>
             </button>
           </div>
         </div>
@@ -100,21 +103,33 @@
         <button class="back-btn" type="button" data-view="catalog" data-return-to="pieces">← Volver al catálogo</button>
 
         <div class="ficha-card" id="detailCard" aria-live="polite">
-          <div class="ficha-photo-wrap">
+          <h3 class="engine-detail-title" id="engineDetailTitle" hidden></h3>
+          <div class="ficha-photo-wrap" id="detailImageGroup">
             <img id="detailImage" src="" alt="Imagen del elemento del laboratorio">
           </div>
 
           <div class="ficha-content">
             <h3 id="detailName">Nombre del elemento</h3>
 
-            <div class="detail-group">
+            <div class="detail-group" id="detailWhatGroup">
               <h4>¿Qué es?</h4>
               <p id="detailWhat"></p>
             </div>
 
-            <div class="detail-group">
-              <h4>Función principal</h4>
+            <div class="detail-group" id="detailPurposeGroup">
+              <h4 id="detailPurposeTitle">Función principal</h4>
               <p id="detailPurpose"></p>
+              <ul id="detailPurposePoints" hidden></ul>
+            </div>
+
+            <div class="detail-group" id="detailEquipmentGroup" hidden>
+              <h4>Equipamiento</h4>
+              <ul id="detailEquipment"></ul>
+            </div>
+
+            <div class="detail-group" id="detailMotorSheetsGroup" hidden>
+              <h4>Fichas técnicas de los motores disponibles</h4>
+              <div id="detailMotorSheets" class="motor-sheet-links"></div>
             </div>
 
           </div>
@@ -126,6 +141,11 @@
 
     <div class="image-modal" id="imageModal" hidden>
       <button class="image-modal-close" id="imageModalClose" type="button" aria-label="Cerrar imagen">×</button>
+      <div class="image-zoom-controls" id="imageZoomControls" hidden>
+        <button type="button" id="imageZoomOut" aria-label="Alejar imagen" title="Alejar">−</button>
+        <button type="button" id="imageZoomReset" aria-label="Restablecer zoom" title="Restablecer zoom">100%</button>
+        <button type="button" id="imageZoomIn" aria-label="Acercar imagen" title="Acercar">+</button>
+      </div>
       <img id="imageModalContent" src="" alt="">
       <video id="videoModalContent" controls playsinline preload="metadata"></video>
     </div>

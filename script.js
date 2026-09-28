@@ -541,17 +541,216 @@ const benchCatalogItems = [
   }
 ];
 
+const spaceCatalogItems = [
+  {
+    id: "sala-de-metrologia",
+    name: "Sala de Metrología",
+    image: "img_espacios/metrologia_3.jpeg",
+    images: [
+      "img_espacios/metrologia_1.jpeg",
+      "img_espacios/metrologia_2.jpeg"
+    ],
+    what: "La Sala de Metrología es un espacio del Laboratorio de Ingeniería Mecánica dedicado al estudio y aplicación de técnicas de medición. La metrología es fundamental en Ingeniería Mecánica, ya que permite garantizar la confiabilidad de las mediciones y el cumplimiento de las especificaciones de diseño.",
+    purpose: "La sala cuenta con instrumentos y equipos de precisión que permiten a los alumnos realizar actividades como:",
+    purposePoints: [
+      "Medición de longitudes, diámetros, espesores y profundidades.",
+      "Verificación de ángulos, perfiles y geometrías.",
+      "Control de tolerancias dimensionales.",
+      "Medición y verificación de piezas mediante sistemas de coordenadas.",
+      "Medición de la dureza de diferentes materiales mediante ensayos específicos."
+    ],
+    equipment: [
+      "Proyector de perfiles óptico: permite observar y medir el contorno, perfil, ángulos y dimensiones de piezas.",
+      "Máquina de Medición por Coordenadas (MMC/CMM): permite realizar mediciones dimensionales y geométricas de piezas en tres dimensiones con alta precisión.",
+      "Durómetro: utilizado para determinar la dureza de diferentes materiales mediante métodos de ensayo específicos.",
+      "Gramil: utilizado para realizar trazados y mediciones de altura sobre una superficie de referencia, permitiendo marcar puntos y líneas a una determinada distancia.",
+      "Micrómetro de altura: utilizado para realizar mediciones de altura con gran precisión y determinar diferencias de nivel respecto de una superficie de referencia.",
+      "Calibres de pie de rey: utilizados para medir dimensiones exteriores, interiores, profundidades y escalones."
+    ]
+  },
+  {
+    id: "sala-de-motores",
+    name: "Sala de Motores",
+    image: "img_espacios/motores_3.jpeg",
+    images: ["img_espacios/motores_1.jpeg", "img_espacios/motores_2.jpeg", "img_espacios/motores_4.jpeg"],
+    what: "La Sala de Motores es un espacio del Laboratorio de Ingeniería Mecánica destinado al estudio experimental, análisis térmico y ensayo de motores de combustión interna.",
+    purpose: "La sala permite a los alumnos de Ingeniería Mecánica, Electrónica y carreras afines aplicar conceptos de asignaturas como Termodinámica, Máquinas Alternativas y Automotores, realizando actividades como:",
+    purposePoints: [
+      "Determinación de curvas características de par motor, potencia y consumo en función del régimen de giro (RPM).",
+      "Ensayo de motores bajo diferentes condiciones de carga y operación.",
+      "Monitoreo y análisis de parámetros térmicos, presiones y funcionamiento general del motor, junto a registro digital en tiempo real de las variables del ensayo para su posterior análisis y evaluación técnica."
+    ],
+    equipment: [
+      "Banco de ensayos dividido en dos sectores: la habitación de prueba insonorizada y el puesto de control.",
+      "En la habitación insonorizada, el motor está montado sobre una base fija y conectado a un freno dinamométrico que le aplica carga, junto con sus sistemas de refrigeración, combustible y escape de gases.",
+      "Desde el puesto de control exterior, los alumnos operan el equipo de forma segura mediante una consola de mando y una computadora con software de adquisición de datos, que registra y grafica los resultados del ensayo en tiempo real."
+    ]
+  },
+  {
+    id: "area-de-fluidos",
+    name: "Área de Fluidos",
+    image: "img_espacios/fluidos_2.jpeg",
+    images: ["img_espacios/fluidos_1.jpeg", "img_espacios/fluidos_3.jpeg"],
+    what: "El Área de Fluidos es un espacio del Laboratorio de Ingeniería Mecánica destinado al estudio experimental de los fluidos y de los sistemas hidráulicos.",
+    purpose: "El área permite a los alumnos aplicar conceptos teóricos de materias como Ingeniería Mecánica I, Ingeniería Mecánica II y Mecánica de Fluidos mediante actividades como:",
+    purposePoints: [
+      "Estudio del comportamiento de los fluidos en tuberías.",
+      "Determinación y análisis del número de Reynolds y los diferentes regímenes de flujo (laminar, transición y turbulento).",
+      "Estudio y medición de pérdidas de carga en tuberías y accesorios.",
+      "Ensayo y comparación del funcionamiento de diferentes bombas hidráulicas en distintas configuraciones.",
+      "Análisis de la transmisión de fuerza y movimiento mediante sistemas y actuadores hidráulicos."
+    ],
+    equipment: [
+      "Brazo hidráulico: equipo didáctico que utiliza fluido a presión para generar fuerza y movimiento mecánico mediante cilindros y mandos hidráulicos.",
+      "Módulo de bombas hidráulicas: instalación con depósito y sistema de acoplamiento para evaluar bombas iguales en serie y paralelo.",
+      "Número de Reynolds: módulo vertical movible con depósito elevado y un tubo transparente donde se inyecta tinta para visualizar los regímenes de flujo.",
+      "Banco de pérdidas de carga en tuberías: red didáctica montada en panel con diversos tramos y tuberías de distintos materiales, diámetros y accesorios para medir pérdidas de presión y caudal."
+    ]
+  },
+  {
+    id: "sala-de-herreria",
+    name: "Sala de Herrería",
+    image: "img_espacios/herreria_3.jpeg",
+    images: ["img_espacios/herreria_1.jpeg", "img_espacios/herreria_2.jpeg"],
+    what: "La Sala de Herrería es un espacio del Laboratorio de Ingeniería Mecánica destinado al trabajo y transformación de materiales, principalmente metales, mediante diferentes operaciones de corte y mecanizado.",
+    purpose: "La sala les permite a los alumnos conocer y aplicar el funcionamiento de distintas máquinas y herramientas, realizando actividades como:",
+    purposePoints: [
+      "Corte de barras, perfiles y piezas metálicas.",
+      "Desbaste de material.",
+      "Realización de operaciones de fresado.",
+      "Realización de procesos de soldadura.",
+      "Operaciones de conformado, enderezado y montaje mediante prensa hidráulica."
+    ],
+    equipment: [
+      "Esmeril: utilizado principalmente para operaciones de desbaste, afilado y eliminación de material mediante ruedas abrasivas.",
+      "Sensitiva: utilizada para realizar cortes de materiales, principalmente barras, perfiles y piezas metálicas, mediante un disco abrasivo.",
+      "Sierra sin fin: utilizada para realizar cortes de materiales mediante una cinta dentada continua.",
+      "Fresadora: máquina-herramienta utilizada para mecanizar piezas mediante una herramienta de corte rotativa, permitiendo realizar superficies planas, ranuras y diferentes formas geométricas.",
+      "Prensa hidráulica: utilizada para operaciones de enderezado, curvado, embutido y montaje o desmontaje de componentes a presión.",
+      "Equipos de soldadura y protección: conjunto de soldadoras y elementos de protección para el aprendizaje de técnicas de unión de metales."
+    ]
+  },
+  {
+    id: "area-de-higiene-y-seguridad",
+    name: "Área de Higiene y Seguridad",
+    image: "img_espacios/higiene_1.jpeg",
+    images: ["img_espacios/higiene_2.jpeg"],
+    what: "El Área de Higiene y Seguridad es un espacio del Laboratorio de Ingeniería Mecánica destinado al estudio y la enseñanza de la prevención de riesgos laborales, la protección en maquinaria, la ergonomía y la seguridad industrial.",
+    purpose: "El área permite a los alumnos comprender la aplicación práctica de las normas de seguridad e higiene mediante actividades como:",
+    purposePoints: [
+      "Evaluación de riesgos mecánicos mediante la simulación de situaciones operacionales y verificación de la efectividad de los dispositivos de protección.",
+      "Análisis ergonómico y control de riesgos a través de la evaluación de zonas de alcance y posturas de trabajo, sumado a la identificación de actos y condiciones inseguras, mapas de riesgo y planos de evacuación.",
+      "Gestión de productos químicos mediante la interpretación de pictogramas de seguridad y pautas para el manejo y almacenamiento seguro de sustancias."
+    ],
+    equipment: [
+      "Cabina de simulación de proyección de partículas: estación de prueba cerrada con ventanas de acrílico para ensayos de impacto de materiales.",
+      "Cabina de simulación con barrera óptica: estación de prueba cerrada equipada con cortina de luz infrarroja de corte automático.",
+      "Cabina de simulación con mando bimanual: estación provista de consola con cruz de dobles pulsadores de accionamiento simultáneo.",
+      "Tablero de actos, condiciones inseguras y mapas de riesgo: panel gráfico didáctico con esquemas de las instalaciones, señalización de peligros y vías de evacuación.",
+      "Tablero de Ergonomía (ErgoZone): panel interactivo con cuadrículas de colores para la delimitación de radios de alcance del operario.",
+      "Panel informativo de productos químicos."
+    ]
+  },
+  {
+    id: "sala-de-proyectos-mecanicos",
+    name: "Sala de Proyectos Mecánicos",
+    image: "img_espacios/proy_mecanico_4.jpeg",
+    images: ["img_espacios/proy_mecanico_1.jpeg", "img_espacios/proy_mecanico_2.jpeg", "img_espacios/proy_mecanico_3.jpeg"],
+    what: "La Sala de Proyectos Mecánicos es un espacio del Laboratorio de Ingeniería Mecánica destinado al estudio, desarrollo y ensayo práctico de sistemas automotrices, automatización industrial y diversos tipos de motores.",
+    purpose: "La sala permite a los alumnos realizar actividades prácticas mediante:",
+    purposePoints: [
+      "Ensayo y diagnóstico automotriz mediante la inspección y prueba de maquetas de vehículos.",
+      "Programación y automatización industrial a través de prácticas de cableado, lógica de control y programación en tableros didácticos con PLC.",
+      "Análisis mecánico mediante la inspección, armado y desarmado de motores y transmisiones."
+    ],
+    equipment: [
+      "Simulador vehicular y motores de prueba: maqueta de automóvil y diversos modelos de motores sobre soportes para prácticas de ensayo y diagnóstico.",
+      "Estación de automatización y PLC: tableros didácticos de pared con controladores programables para simulación de control.",
+      "Equipamiento auxiliar: bancos para motores, mesas de trabajo, grúa hidráulica y carros de herramientas."
+    ],
+    motorSheets: [
+      { label: "Motor Fiat 1.4 FIRE", itemId: "motor-fiat-1-4-fire" },
+      { label: "Motor Renault 1.6", itemId: "motor-renault-1-6" },
+      { label: "Motor Renault 1.9 diésel", itemId: "motor-renault-1-9-diesel" },
+      { label: "Motor Renault 2.0", itemId: "motor-renault-2-0" },
+      { label: "Suzuki GSR 600", itemId: "suzuki-gsr-600" }
+    ]
+  },
+  {
+    id: "gabinete-informatico",
+    name: "Gabinete Informático",
+    what: "El Gabinete Informático es un espacio del Laboratorio de Ingeniería Mecánica destinado al diseño asistido por computadora, la simulación numérica y el procesamiento de datos. Es un área de uso libre a disposición de todos los estudiantes de la carrera para el desarrollo de sus actividades académicas y proyectos.",
+    purpose: "El área permite a los alumnos realizar actividades de ingeniería computacional (CAD/CAE) utilizando herramientas digitales, tales como:",
+    purposePoints: [
+      "Modelado tridimensional de piezas, mecanismos y ensambles.",
+      "Elaboración de planos técnicos y documentación gráfica de ingeniería.",
+      "Cálculo numérico, programación y resolución de problemas de ingeniería.",
+      "Análisis de datos, modelización matemática y generación de planillas de cálculo.",
+      "Estudio libre, resolución de trabajos prácticos y desarrollo de proyectos integradores en equipo."
+    ],
+    equipment: [
+      "Estaciones de trabajo (PC): mesadas equipadas con computadoras destinadas al trabajo individual y grupal de los estudiantes.",
+      "Software de diseño e ingeniería: programas especializados para modelado 3D, dibujo técnico y simulación (como SolidWorks, AutoCAD, entre otros).",
+      "Software de cálculo y análisis: entornos informáticos para cálculo numérico, programación y procesamiento de datos (como GNU Octave, Microsoft Excel y herramientas específicas de la especialidad).",
+      "Pizarrón: espacio para explicaciones teóricas y resolución de dudas durante las prácticas."
+    ]
+  }
+];
+
+const engineCatalogItems = [
+  {
+    id: "motor-fiat-1-4-fire",
+    name: "Motor Fiat 1.4 FIRE",
+    image: "fichas_motores/MOTOR FIAT 1.4 FIRE_.jpg"
+  },
+  {
+    id: "motor-renault-1-6",
+    name: "Motor Renault 1.6",
+    image: "fichas_motores/MOTOR RENAULT 1.6_.jpg"
+  },
+  {
+    id: "motor-renault-1-9-diesel",
+    name: "Motor Renault 1.9 diésel",
+    image: "fichas_motores/MOTOR RENAULT 1.9 DIESSEL_.jpg"
+  },
+  {
+    id: "motor-renault-2-0",
+    name: "Motor Renault 2.0",
+    image: "fichas_motores/MOTOR RENAULT 2.0 _.jpg"
+  },
+  {
+    id: "suzuki-gsr-600",
+    name: "Suzuki GSR 600",
+    image: "fichas_motores/SUZUKI GSR 600.jpg"
+  }
+];
+
 const catalogGrid = document.getElementById("catalogGrid");
 const detailImage = document.getElementById("detailImage");
+const detailImageGroup = document.getElementById("detailImageGroup");
 const detailName = document.getElementById("detailName");
+const engineDetailTitle = document.getElementById("engineDetailTitle");
+const detailWhatGroup = document.getElementById("detailWhatGroup");
 const detailWhat = document.getElementById("detailWhat");
+const detailPurposeGroup = document.getElementById("detailPurposeGroup");
 const detailPurpose = document.getElementById("detailPurpose");
+const detailPurposeTitle = document.getElementById("detailPurposeTitle");
+const detailPurposePoints = document.getElementById("detailPurposePoints");
+const detailEquipmentGroup = document.getElementById("detailEquipmentGroup");
+const detailEquipment = document.getElementById("detailEquipment");
+const detailMotorSheetsGroup = document.getElementById("detailMotorSheetsGroup");
+const detailMotorSheets = document.getElementById("detailMotorSheets");
 const detailGallery = document.getElementById("detailGallery");
 const imageModal = document.getElementById("imageModal");
 const imageModalContent = document.getElementById("imageModalContent");
+const imageZoomControls = document.getElementById("imageZoomControls");
+const imageZoomOut = document.getElementById("imageZoomOut");
+const imageZoomReset = document.getElementById("imageZoomReset");
+const imageZoomIn = document.getElementById("imageZoomIn");
 const videoModalContent = document.getElementById("videoModalContent");
 const imageModalClose = document.getElementById("imageModalClose");
 let currentCatalogType = "pieces";
+let imageZoomLevel = 1;
 
 function updateCatalogHeader() {
   const catalogTitle = document.getElementById("catalogTitle");
@@ -567,8 +766,16 @@ function updateCatalogHeader() {
       description: "Seleccione una máquina para ver su ficha completa."
     },
     "bench-tests": {
-      label: "Bancos didácticos / de ensayos",
-      description: "Seleccione un banco didáctico o de ensayos para ver su ficha completa."
+      label: "Bancos de Ensayo",
+      description: "Seleccione un banco de ensayo para ver su ficha completa."
+    },
+    engines: {
+      label: "Motores",
+      description: "Seleccione un motor para ver su ficha completa."
+    },
+    "lab-spaces": {
+      label: "Espacios del Laboratorio",
+      description: "Seleccione un espacio del laboratorio para ver su ficha completa."
     }
   };
 
@@ -580,11 +787,13 @@ function updateCatalogHeader() {
 function getCurrentCatalogItems() {
   if (currentCatalogType === "machines") return machineCatalogItems;
   if (currentCatalogType === "bench-tests") return benchCatalogItems;
+  if (currentCatalogType === "lab-spaces") return spaceCatalogItems;
+  if (currentCatalogType === "engines") return engineCatalogItems;
   return catalogItems;
 }
 
 function getAllCatalogItems() {
-  return [...catalogItems, ...machineCatalogItems, ...benchCatalogItems];
+  return [...catalogItems, ...machineCatalogItems, ...benchCatalogItems, ...spaceCatalogItems, ...engineCatalogItems];
 }
 
 function findItemById(itemId) {
@@ -633,24 +842,8 @@ function showCatalogChoice() {
   catalogGrid.innerHTML = "";
 }
 
-function showPiecesCatalog() {
-  currentCatalogType = "pieces";
-  catalogChoice.hidden = true;
-  catalogBrowser.hidden = false;
-  updateCatalogHeader();
-  renderCatalog();
-}
-
-function showMachinesCatalog() {
-  currentCatalogType = "machines";
-  catalogChoice.hidden = true;
-  catalogBrowser.hidden = false;
-  updateCatalogHeader();
-  renderCatalog();
-}
-
-function showBenchTestsCatalog() {
-  currentCatalogType = "bench-tests";
+function showCatalogType(type) {
+  currentCatalogType = type;
   catalogChoice.hidden = true;
   catalogBrowser.hidden = false;
   updateCatalogHeader();
@@ -663,12 +856,13 @@ function renderCatalog() {
     firstItem.name.localeCompare(secondItem.name, "es", { sensitivity: "base" })
   );
 
-  catalogGrid.innerHTML = sortedItems.map(item => `
+  document.querySelector(".element-search").hidden = sortedItems.length === 0;
+  catalogGrid.innerHTML = sortedItems.length ? sortedItems.map(item => `
     <button class="catalog-card" data-id="${item.id}" type="button">
       <h3>${item.name}</h3>
       <span class="card-action">Ver ficha →</span>
     </button>
-  `).join("");
+  `).join("") : '<p class="catalog-empty">No hay elementos cargados en esta categoría.</p>';
 
   document.querySelectorAll(".catalog-card").forEach(button => {
     button.addEventListener("click", () => {
@@ -682,16 +876,7 @@ function renderCatalog() {
 
 document.querySelectorAll("[data-catalog-type]").forEach(button => {
   button.addEventListener("click", () => {
-    const selectedType = button.dataset.catalogType;
-    if (selectedType === "machines") {
-      showMachinesCatalog();
-      return;
-    }
-    if (selectedType === "bench-tests") {
-      showBenchTestsCatalog();
-      return;
-    }
-    showPiecesCatalog();
+    showCatalogType(button.dataset.catalogType);
   });
 });
 
@@ -753,10 +938,18 @@ function selectItem(itemId) {
   const itemType =
     catalogItems.some(entry => entry.id === item.id) ? "pieces" :
     machineCatalogItems.some(entry => entry.id === item.id) ? "machines" :
-    "bench-tests";
+    benchCatalogItems.some(entry => entry.id === item.id) ? "bench-tests" :
+    spaceCatalogItems.some(entry => entry.id === item.id) ? "lab-spaces" :
+    "engines";
 
   currentCatalogType = itemType;
   updateCatalogHeader();
+  document.getElementById("detailCard").classList.toggle("space-ficha", itemType === "lab-spaces");
+  document.getElementById("detailCard").classList.toggle("engine-ficha", itemType === "engines");
+  engineDetailTitle.textContent = item.name;
+  engineDetailTitle.hidden = itemType !== "engines";
+  detailName.hidden = itemType === "engines";
+  detailPurposeTitle.textContent = itemType === "lab-spaces" ? "¿Para qué se usa?" : "Función principal";
 
   const catalogBackButton = document.querySelector(".back-btn");
   if (catalogBackButton) {
@@ -766,8 +959,14 @@ function selectItem(itemId) {
   const galleryImages = (item.images || []).filter(image => image !== item.image);
   const galleryVideos = item.videos || [];
 
-  detailImage.src = item.image;
-  detailImage.alt = item.name;
+  detailImageGroup.hidden = !item.image;
+  if (item.image) {
+    detailImage.src = item.image;
+    detailImage.alt = item.name;
+  } else {
+    detailImage.removeAttribute("src");
+    detailImage.alt = "";
+  }
   detailGallery.innerHTML = galleryImages.map(image => `
     <button class="detail-gallery-item" type="button" aria-label="Ver imagen completa de ${item.name}">
       <img src="${image}" alt="${item.name}" loading="lazy">
@@ -786,11 +985,34 @@ function selectItem(itemId) {
       </div>
     `;
   }).join("");
+  detailGallery.hidden = galleryImages.length === 0 && galleryVideos.length === 0;
   detailName.textContent = item.name;
   detailWhat.textContent = item.what;
+  detailWhatGroup.hidden = !item.what;
   detailPurpose.textContent = item.purpose;
+  detailPurposeGroup.hidden = !item.purpose && !item.purposePoints?.length;
+  detailPurposePoints.replaceChildren(...(item.purposePoints || []).map(text => {
+    const listItem = document.createElement("li");
+    listItem.textContent = text;
+    return listItem;
+  }));
+  detailPurposePoints.hidden = !item.purposePoints?.length;
+  detailEquipment.replaceChildren(...(item.equipment || []).map(text => {
+    const listItem = document.createElement("li");
+    listItem.textContent = text;
+    return listItem;
+  }));
+  detailEquipmentGroup.hidden = !item.equipment?.length;
+  detailMotorSheets.replaceChildren(...(item.motorSheets || []).map(sheet => {
+    const link = document.createElement("a");
+    link.className = "motor-sheet-link";
+    link.href = `?item=${sheet.itemId}`;
+    link.textContent = sheet.label;
+    return link;
+  }));
+  detailMotorSheetsGroup.hidden = !item.motorSheets?.length;
 
-  detailImage.onclick = () => openImageModal(detailImage.src, detailImage.alt);
+  detailImage.onclick = item.image ? () => openImageModal(detailImage.src, detailImage.alt) : null;
   detailGallery.querySelectorAll(".detail-gallery-item").forEach(itemElement => {
     const openMedia = () => {
       const image = itemElement.querySelector("img");
@@ -814,7 +1036,9 @@ function selectItem(itemId) {
 function openImageModal(src, alt) {
   imageModalContent.src = src;
   imageModalContent.alt = alt;
+  setImageZoom(1);
   imageModalContent.hidden = false;
+  imageZoomControls.hidden = false;
   videoModalContent.hidden = true;
   videoModalContent.pause();
   videoModalContent.removeAttribute("src");
@@ -824,6 +1048,7 @@ function openImageModal(src, alt) {
 function openVideoModal(src) {
   imageModalContent.hidden = true;
   imageModalContent.removeAttribute("src");
+  imageZoomControls.hidden = true;
   videoModalContent.hidden = false;
   videoModalContent.pause();
   videoModalContent.src = src;
@@ -832,14 +1057,28 @@ function openVideoModal(src) {
   videoModalContent.play().catch(() => {});
 }
 
+function setImageZoom(level) {
+  imageZoomLevel = Math.min(4, Math.max(0.5, level));
+  imageModalContent.style.transform = `scale(${imageZoomLevel})`;
+  imageZoomReset.textContent = `${Math.round(imageZoomLevel * 100)}%`;
+  imageZoomOut.disabled = imageZoomLevel <= 0.5;
+  imageZoomIn.disabled = imageZoomLevel >= 4;
+}
+
 function closeImageModal() {
   imageModal.hidden = true;
   imageModalContent.src = "";
+  imageModalContent.style.transform = "";
+  imageZoomControls.hidden = true;
+  setImageZoom(1);
   videoModalContent.pause();
   videoModalContent.removeAttribute("src");
 }
 
 imageModalClose.addEventListener("click", closeImageModal);
+imageZoomOut.addEventListener("click", () => setImageZoom(imageZoomLevel - 0.5));
+imageZoomReset.addEventListener("click", () => setImageZoom(1));
+imageZoomIn.addEventListener("click", () => setImageZoom(imageZoomLevel + 0.5));
 imageModal.addEventListener("click", event => {
   if (event.target === imageModal) closeImageModal();
 });
@@ -862,11 +1101,15 @@ document.querySelectorAll("[data-view]").forEach(button => {
     if (targetView === "catalog") {
       const returnType = button.dataset.returnTo;
       if (returnType === "machines") {
-        showMachinesCatalog();
+        showCatalogType("machines");
       } else if (returnType === "bench-tests") {
-        showBenchTestsCatalog();
+        showCatalogType("bench-tests");
       } else if (returnType === "pieces") {
-        showPiecesCatalog();
+        showCatalogType("pieces");
+      } else if (returnType === "lab-spaces") {
+        showCatalogType("lab-spaces");
+      } else if (returnType === "engines") {
+        showCatalogType("engines");
       } else {
         showCatalogChoice();
       }

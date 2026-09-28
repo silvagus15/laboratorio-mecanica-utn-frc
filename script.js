@@ -438,13 +438,13 @@ const machineCatalogItems = [
   },
   {
     id: "fresadora-cnc-5-ejes",
-    name: "Fresadora CNC de 5 ejes",
+    name: "Fresadora CNC de 3 ejes",
     image: "img_piezas/fresa_5ejes_1.jpeg",
     images: [
       "img_piezas/fresa_5ejes_1.jpeg",
       "img_piezas/fresa_5ejes_2.jpeg"
     ],
-    what: "Máquina automatizada y controlada por computadora que permite tallar y mecanizar una pieza moviendo la herramienta de corte, la mesa de trabajo o la pieza en cinco ejes diferentes.",
+    what: "Máquina automatizada y controlada por computadora que permite tallar y mecanizar una pieza moviendo la herramienta de corte, la mesa de trabajo o la pieza en 3 ejes diferentes.",
     purpose: "Realizar cortes, perforaciones y formas complejas con alta precisión, pudiendo trabajar varias caras de una pieza sin tener que cambiarla de posición manualmente."
   },
   {

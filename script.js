@@ -716,12 +716,12 @@ const engineCatalogItems = [
   {
     id: "motor-renault-2-0",
     name: "Motor Renault 2.0",
-    image: "fichas_motores/MOTOR RENAULT 2.0 _.jpg"
+    image: "fichas_motores/MOTOR_RENAULT_2.0.jpeg"
   },
   {
     id: "suzuki-gsr-600",
     name: "Suzuki GSR 600",
-    image: "fichas_motores/SUZUKI GSR 600.jpg"
+    image: "fichas_motores/SUZUKI_GSR_600.jpeg"
   }
 ];
 
